@@ -1,6 +1,6 @@
 ## Part 1 
 
-> 17.5/20
+> Final Grade 17.8/20
 
 #### Question 1:
 1, 8, 11, and 20 are species #1
@@ -26,14 +26,14 @@ After reading about females are usually larger than males, I realized that size 
 
 ## Part 2, Subsection 2
 
-#### Question 1:
+1)
 
 > Next time show what R code you used to find the names.
 > names(plethodon)
 
 They are land, links, species, site and outline.
 
-#### Question 2:
+2) 
 
 ````R
 > class(plethodon)
@@ -44,7 +44,7 @@ They are land, links, species, site and outline.
 
 They are both lists.
 
-#### Question 3:
+3)
 
 ````R
 > dim(plethodon[[1]])
@@ -53,23 +53,23 @@ They are both lists.
 
 ## Part 2, Subsection 2
 
-#### Question 1: 
+1)
 
 the first object in the list record the landmark data
 
-#### Question 2:
+2)
 
 ````R
 > ProcrustesHummingbirds<-gpagen(hummingbirds[["land"]])
 ````
 
-#### Question 3:
+3)
 
 ````R
 > plotTangentSpace(ProcrustesHummingbirds[["coords"]],warpgrids=FALSE,verbose=FALSE)
 ````
 
-#### Question 4:
+4)
 
 > Why do you think there are three? You should have described the plot and what about it made you think there are three. -1 point
 
@@ -77,33 +77,33 @@ There are a least three species.
 
 ## Part 3
 
-#### Question 1:
+1) 
 
 Fangs longer than 6 inches
 
-#### Question2:
+2)
 
-> Fangs or sulfurous order, -1 Point
+> Fangs or sulfurous order, -0.5
 
 <strike>Adorable eyelashes</strike>
 
-#### Question3:
+3)
 
 Adorable eyelashes
 
-#### Question 4: 
+4)
 
 Taxa C, D and E have sulfurous odor.
 
-#### Question 5:
+5)
 
 E has laser death ray, but D does not.
 
-####  Question 6:
+6)
 
 Adorable eyelashes is a synapomorphy, because it is not unique to a taxon.
 
-#### Question 7:
+7)
 
 Family 1: monophyletic
 
@@ -112,12 +112,12 @@ Family 2: polyphyletic
 <strike>Family 3: If family 3 includes their most recent common ancestor, then the answer is monophyletic. Otherwise, the answer is polyphyletic.</strike>
 > Family 3 is monophyletic
 
-#### Question 8:
+8)
 
 I do not think it is advisable, because they do not share any characteristics after evolved from their most recent common ancestor, indicating that they are not closely related.
 
-#### Question 9:
-> -1 point
+9)
+> -0.5 points
 
 <strike>Group 1: polyphyletic</strike>
 > paraphyletic
@@ -134,12 +134,14 @@ Group 4: If includes their most recent common ancestor, the answer is monophylet
 Group 5: polyphyletic
 
 Part 4:
-Question 1:
+1)
 Peramorphosis is responsible for the evolution of mccullochi
 Pedomorphosis is responsible for the evolution of gigantea
 
-Question 2:
+2)
 Mccullochi has undergone a greater degree of heterochrony.
+
+> *G. gigantea* has undergone more. - 0.5 points
 
 Question 3:
 Pedomorphosis is represented in the Olenellus example.
