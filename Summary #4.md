@@ -1,19 +1,22 @@
-Derek Li
-Geoscience 541
-02/14/16
+####Derek Li
+####Geoscience 541
+####02/14/16
+#####Cenozoic latitudinal response curves” individualistic changes in the latitudinal distributions of marine bivalves and gastropods by Andrew Zaffos (2015)
 
-Cenozoic latitudinal response curves” individualistic changes in the latitudinal distributions of marine bivalves and gastropods by Andrew Zaffos (2015)
-
-Article summary:
+###Article summary:
 At the beginning of the paper, the author brings up a question that why marine bivalve firstly tend to occur in the tropics, whereas their last occurrences more cluster in the extratropics. One possible explanation is that the latitudinal distribution preferentially moves towards the poles. However, if this explanation were true, then couple other questions arise. In order to solve these questions, the author starts off by characterizing the distributions of bivalve and gastropod genera as response curves along the latitudinal gradient. Then the author compares the covariation of latitudinal tolerance, representing width of the curve, and preferred latitude, reflecting the central position of the curve, between intervals in order to examine the correlation coefficient. Moreover, the best-fit regression is used to investigate if the distribution tends to move pole-wards or not. 
 
-Zaffos then talks about the analytical methods that he uses in this paper and how he interprets the data. Furthermore, The author brings up another problem regarding the validity of the Gaussian logistic regression (GLR). As a solution, the author uses another method called canonical correspondence analysis, since it does not require the assumption of symmetric distribution. After combined all these methods, the results demonstrate that there is a rather weak evidence for pole-word shift. Moreover, the author concludes that marine genera are more likely to shift the center of their distribution than widen it and the smaller changes are more common than larger changes as shown by the hollow curves. Towards the end of the paper, the author discusses the implications of the results. The author states the reason that there is almost no evidence for pole-ward distribution shift is that the majority of occurrences still remain within tropic even though part of the distribution may migrate into higher latitude. In addition, the result that average level of change for each curve is less than the expected change by chance indicates the biogeographic conservatism. 
+Zaffos `(don't forget about Miller! coauthors often contribute quite substantive/collaboratively)` then talks about the analytical methods that he uses in this paper and how he interprets the data. Furthermore, The authors bring up another problem regarding the validity of the Gaussian logistic regression (GLR). As a solution, the author uses another method called canonical correspondence analysis, since it does not require the assumption of symmetric distribution. After combined all these methods, the results demonstrate that there is a rather weak evidence for poleward shift. Moreover, the author concludes that marine genera are more likely to shift the center of their distribution than widen it and the smaller changes are more common than larger changes as shown by the hollow curves. Towards the end of the paper, the author discusses the implications of the results. The author states the reason that there is almost no evidence for pole-ward distribution shift is that the majority of occurrences still remain within tropic even though part of the distribution may migrate into higher latitude. In addition, the result that average level of change for each curve is less than the expected change by chance indicates the biogeographic conservatism. 
+> This is a pretty good summary!
 
-Things I liked about the paper
+####Things I liked about the paper
 There are couple things I liked about this paper. First of all, in analytical methods section, the author talks about how he is going to interpret the data. For instance, in the third paragraph of the analytical method section, the author states the indications of slope and correlation coefficient. I think it makes the entire latter part of the paper more readable for readers who do not know too much about analytical analysis. By reinforcing the way the author interprets the data, readers are more likely to understand the techniques that the author uses and follow the thoughts of the author. Secondly, towards the end of the paper, author provides an overall conclusion of the paper. I found it rather helpful in understanding and organizing the implications derived from the analysis of the results. Furthermore, the subtitles in discussion section also play the same role as the conclusion section does. It separates the discussion into two parts, making the entire section more organized and explicit for readers.
+> It's good that you found the discussion of the methods and explanation of results helpful. This is often one of the best parts of diving into the primary literature: learning about methods for analyzing data. We hope that this skill is something that you get out of the class.
 
-Things I did not like about the paper
+####Things I did not like about the paper
 There is one thing I did not like about the paper. In the introduction section, the author did not give any background information regarding gastropods group. This leads to the confusion I had when I was reading the second paragraph of the introduction, because suddenly the author starts talking about the distributions of marine gastropod genera. Without going back the title, I thought this paper only focuses on bivalves by just reading the background information. 
+> Yes, there is very little in the way of biology about the organisms studied here!
 
-Evaluations of the figures and tables
+####Evaluations of the figures and tables
 I think the overall quality of the figures and tables is great, especially figure one. It gives readers a rather explicit view of what the author means by latitudinal tolerance and preferred latitude. Table one is also rather explicit. In addition, the author gives a great interpretation of the values in the paper. The second figure is kind of confusing by just looking at it, however the legend tells the entire story. 
+> Good summary!
