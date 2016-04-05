@@ -27,7 +27,7 @@ Anadara
 
 Problem set 2:
 Question 1:
-Randomly resample the occurrences of Lucia, and find the mean longitude of our random sample.
+Randomly resample the occurrences of Lucia, and find the mean longitude of our random sampl
 Lucina[,”paleolng”]: Longtitude of occurrences of Lucia;
 Length(Lucina[,”paleolng”]): set the length to only the longitude of occurrences of Lucia
 replace=true: sampling is with replacement
