@@ -1,8 +1,13 @@
-Problem Set 1:
-1. 
+Problem Set 1
+
+> 20/20
+
+1)
+
 The North America is currently to the West of tHis position in the Cretaceous
 
-2.
+2)
+
 Meaning of col = A specification for the default plotting color
 Meaning of lty = The line type
 Meaning of add = add modern map on the cretaceous map
@@ -10,32 +15,50 @@ rgb() function creates colors corresponding to the given intensities of the red,
 1 means max red, first 0 means no green, second 0 means no blue, 0.33 means 0.33 partially transparent.
 
 3. 
-> AlbianMap<-downloadPaleogeography(Age=110)
+
+`> AlbianMap<-downloadPaleogeography(Age=110)`
 
 4. 
-> plot(CretaceousMap,col=rgb(0,0,1,0.33),lty=0.01)
-> plot(ModernMap,col=rgb(1,0,0,0.33),lty=0.01,add=TRUE)
-> plot(AlbianMap,col=rgb(0,1,0,0.33),lty=0.01,add=TRUE)
+
+````R
+> plot(CretaceousMap,col=rgb(0,0,1,0.33),lty=0)
+> plot(ModernMap,col=rgb(1,0,0,0.33),lty=0,add=TRUE)
+> plot(AlbianMap,col=rgb(0,1,0,0.33),lty=0,add=TRUE)
+````
 
 5.
+
 There has been more movement north and south in the Eastern Hemisphere since the Albian.
 
 6.
+
 There has been more movement east and west in the Western hemisphere since the Albian.
 
 Problem set 2:
-1.
+
+1)
+
+````R
 > Boundary<-downloadPaleogeography(Age=56)
-> plot(Boundary,col=rgb(1,0,0,0.33),lty=0.01)
+> plot(Boundary,col=rgb(1,0,0,0.33),lty=0)
+````
 
 2.
+
+````R
 > DataPBDB<-downloadPBDB(Taxa=c("Anthozoa"),StartInterval="Paleocene",StopInterval="Eocene")
+````
 
 3.
+
+````R
 > nrow(DataPBDB)
 [1] 2847
+````
 
 4.
+
+````R
 > dimnames(DataPBDB)
 
 occurrence_no: A number that uniquely identifies the occurrence
@@ -64,31 +87,44 @@ accepted_no: The unique identifier of the accepted taxonomic name in this databa
 min_ma: The late bound of the geologic time range associated with this occurrence (in Ma)
 paleolat: the paleolatitude of the collection, evaluated according to the primary model indicated by the parameter
 order: the name of the order in which this occurrence is classified
+````
 
 5.
+
+````R
 > points(DataPBDB[c("paleolng","paleolat")])
+````
 
 6.
 The most of the Anthozoa occurrences in the Eastern Hemisphere are in Europe. Anthozoa are primarily marine organisms. The ocean must have existed in this region of the world during this time.
 
+> Epicontinetnal sea, yes.
+
 The Problem Set 3:
 1.
+````R
 > DataPBDB<-downloadPBDB(Taxa=c("Perissodactyla"),StartInterval="Paleogene",StopInterval="Paleogene")
+```` 
  
 2.
 Defining attribute: nonruminant ungulates
 Examples: horses, tapirs, and rhinoceros
 
 3.
+````R
 > DataPBDB[which(DataPBDB[,"collection_no"]==112723),]
+````
 
 4.
 501 tectonic plate is associated with this collection
 The modern day region of he world that this geoplate id corresponds to is Pakistan.
 
 5.
+
+````R
 > nrow(DataPBDB[which(DataPBDB[,"geoplate"]==501),])
 [1] 84
+````
 
 6.
 Region X has moved towards south and slightly west from Albian to the present day.
