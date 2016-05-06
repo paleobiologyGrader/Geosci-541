@@ -1,0 +1,329 @@
+Problem Set 1
+1.
+> ncol(OrdovicianMatrix)
+[1] 23
+> ncol(SilurianMatrix)
+[1] 53
+# They are both Gamma biodiversity.
+
+2.
+> sum(OrdovicianMatrix)
+[1] 197
+> dim(OrdovicianMatrix)
+[1]15 23
+> 197/15
+[1] 13.13333
+
+> sum(SilurianMatrix)
+[1] 609
+> dim(SilurianMatrix)
+[1] 29 53
+> 609/29
+[1] 21
+# They both represent alpha
+
+3.
+> 23-13.13333 #Ordovician
+[1] 9.86667
+> 53-21 #Silurian
+[1] 32
+# They are both beta.
+
+4. 
+> 53-23
+[1] 30
+# Gamma biodiversity increased by 30
+> 21-13.13333
+[1] 7.86667
+# Alpha biodiversity increased by 7.86667
+> 32-9.86667
+[1] 22.13333
+# Beta biodiversity increased by 22.13333
+
+5. 
+> 13.13333/23*100
+[1] 57.10143
+> 21/53*100
+[1] 39.62264
+#Alpha percentage
+
+> 9.86667/23*100
+[1] 42.89857
+> 32/53*100
+[1] 60.37736
+#Beta percentage
+
+The beta increases across the Ordovician Silurian boundary when measure as a percentage.
+
+Conceptually it means that Silurian faunas are more cosmopolitan following the Ordovician/Silurian mass extinction.
+
+Yes, it matches what we learned about Silurian cosmopolitanism in class. 
+
+6.
+The drawback is that they do not take into account the relative abundance of species.
+The other drawback is that they do not take into account the massive extinction if the percentages are about the same before and after the extinction event.
+
+Problem Set 2
+1.
+> LatePermian<-downloadPBDB(Taxa="Animalia",StartInterval="Guadalupian",StopInterval="Lopingian")
+> EarlyTriassic<-downloadPBDB(Taxa="Animalia",StartInterval="Induan",StopInterval="Ladinian")
+> LateCretaceous<-downloadPBDB(Taxa="Animalia",StartInterval="Santonian",StopInterval="Maastrichtian")
+> EarlyPaleogene<-downloadPBDB(Taxa="Animalia",StartInterval="Danian",StopInterval="Lutetian")
+
+> LatePermian<-cleanRank(LatePermian,"genus")
+> EarlyTriassic<-cleanRank(EarlyTriassic,"genus")
+> LateCretaceous<-cleanRank(LateCretaceous,"genus")
+> EarlyPaleogene<-cleanRank(EarlyPaleogene,"genus")
+
+> Epochs<-downloadTime("international epochs")
+
+> LatePermian<-constrainAges(LatePermian,Epochs)
+> EarlyTriassic<-constrainAges(EarlyTriassic,Epochs)
+> LateCretaceous<-constrainAges(LateCretaceous,Epochs)
+> EarlyPaleogene<-constrainAges(EarlyPaleogene,Epochs)
+
+> LatePermian<-macrostratMatch(LatePermian)
+> EarlyTriassic<-macrostratMatch(EarlyTriassic)
+> LateCretaceous<-macrostratMatch(LateCretaceous)
+> EarlyPaleogene<-macrostratMatch(EarlyPaleogene)
+
+> LatePermianMatrix<-presenceMatrix(LatePermian,SampleDefinition="unit_name",TaxonRank="genus")
+> EarlyTriassicMatrix<-presenceMatrix(EarlyTriassic,SampleDefinition="unit_name",TaxonRank="genus")
+> LateCretaceousMatrix<-presenceMatrix(LateCretaceous,SampleDefinition="unit_name",TaxonRank="genus")
+> EarlyPaleogeneMatrix<-presenceMatrix(EarlyPaleogene,SampleDefinition="unit_name",TaxonRank="genus")
+
+> LatePermianMatrix<-cullMatrix(LatePermianMatrix,2,10)
+> EarlyTriassicMatrix<-cullMatrix(EarlyTriassicMatrix,2,10)
+> LateCretaceousMatrix<-cullMatrix(LateCretaceousMatrix,2,10)
+> EarlyPaleogeneMatrix<-cullMatrix(EarlyPaleogeneMatrix,2,10)
+
+2.
+#Alpha
+> sum(LatePermianMatrix)
+[1] 1268
+> dim(LatePermianMatrix)
+[1]  22 311
+> 1268/22
+[1] 57.63636
+
+> sum(EarlyTriassicMatrix)
+[1] 457
+> dim(EarlyTriassicMatrix)
+[1]  13 158
+> 457/13
+[1] 35.15385
+
+> sum(LateCretaceousMatrix)
+[1] 5565
+> dim(LateCretaceousMatrix)
+[1]  96 775
+> 5565/96
+[1] 57.96875
+
+> sum(EarlyPaleogeneMatrix)
+[1] 6342
+> dim(EarlyPaleogeneMatrix)
+[1]  120 1031
+> 6342/120
+[1] 52.85
+
+#Gamma
+> ncol(LatePermianMatrix)
+[1] 311
+> ncol(EarlyTriassicMatrix)
+[1] 158
+> ncol(LateCretaceousMatrix)
+[1] 775
+> ncol(EarlyPaleogeneMatrix)
+[1] 1031
+
+#Beta
+> 311-57.63636 #LatePermian
+[1] 253.3636
+> 158-35.15385 #EarlyTriassic
+[1] 122.8461
+> 775-57.96875 #LateCretaceous
+[1] 717.0312
+> 1031-52.85 # EarlyPaleogene
+[1] 978.15
+
+3.
+#Alpha percentage
+> 57.63636/311*100 #LatePermian
+[1] 18.53259
+> 35.15385/158*100 #EarlyTriassic
+[1] 22.24927
+> 57.96875/775*100 #LateCretaceous
+[1] 7.479839
+> 52.85/1031*100 #EarlyPaleogene
+[1] 5.126091
+
+#Beta percentage
+> 253.3636/311*100 #LatePermian
+[1] 81.4674
+> 122.8461/158*100 #EarlyTriassic
+[1] 77.7507
+> 717.0312/775*100 #LateCretaceous
+[1] 92.52015
+> 978.15/1031*100 #EarlyPaleogene
+[1] 94.87391
+
+4. 
+> 35.15385-57.63636
+[1] -22.48251
+> 52.85-57.96875
+[1] -5.11875
+
+#The alpha biodiversity decreases after each extinction event
+
+5.
+> 22.24927-18.53259 #End-Permian Extinction
+[1] 3.71668
+> 5.126091-7.479839 #End-Cretaceous Extinction
+[1] -2.353748
+
+#Percentage Alpha biodiversity increased after Permian Extinction, whereas alpha biodiversity decreased after Cretaceous extinction.
+
+Problem Set 3
+1.
+> LateOrdovicianMatrix<-abundanceMatrix(LateOrdovician,SampleDefinition="unit_name",TaxonRank="genus")
+> LateOrdovicianMatrix<-cullMatrix(LateOrdovicianMatrix,2,10)
+
+> EarlySilurianMatrix<-abundanceMatrix(EarlySilurian,SampleDefinition="unit_name",TaxonRank="genus")
+> EarlySilurianMatrix<-cullMatrix(EarlySilurianMatrix,2,10)
+
+> LatePermianMatrix<-abundanceMatrix(LatePermian,SampleDefinition="unit_name",TaxonRank="genus")
+>  LatePermianMatrix<-cullMatrix(LatePermianMatrix,2,10)
+
+> EarlyTriassicMatrix<-abundanceMatrix(EarlyTriassic,SampleDefinition="unit_name",TaxonRank="genus")
+> EarlyTriassicMatrix<-cullMatrix(EarlyTriassicMatrix,2,10)
+
+> LateCretaceousMatrix<-abundanceMatrix(LateCretaceous,SampleDefinition="unit_name",TaxonRank="genus")
+> LateCretaceousMatrix<-cullMatrix(LateCretaceousMatrix,2,10)
+
+> EarlyPaleogeneMatrix<-abundanceMatrix(EarlyPaleogene,SampleDefinition="unit_name",TaxonRank="genus")
+> EarlyPaleogeneMatrix<-cullMatrix(EarlyPaleogeneMatrix,2,10)
+
+2.
+> install.packages("vegan")
+> library(vegan)
+
+> LateOrdovicianAbundance<-apply(LateOrdovicianMatrix,2,sum)
+> LateOrdovicianSEB<-diversity(LateOrdovicianAbundance,index = "shannon", MARGIN = 1, base = exp(1))
+> LateOrdovicianSEB
+[1] 4.214808 #Gamma
+> LateOrdovicianSEB<-mean(diversity(LateOrdovicianMatrix, index = "shannon", MARGIN = 1, base = exp(1)))
+> LateOrdovicianSEB
+[1] 2.775078 #Alpha
+> 4.214808-2.775078
+[1] 1.43973 #Beta
+
+> EarlySilurianAbundance<-apply(EarlySilurianMatrix,2,sum)
+> EarlySilurianSEB<-diversity(EarlySilurianAbundance,index = "shannon", MARGIN = 1, base = exp(1))
+> EarlySilurianSEB
+[1] 5.336366 #Gamma
+> EearlySilurianSEB<-mean(diversity(EarlySilurianMatrix, index = "shannon", MARGIN = 1, base = exp(1)))
+> EearlySilurianSEB
+[1] 3.214317 #Alpha
+> 5.336366-3.214317
+[1] 2.122049 #Beta
+
+> LatePermianAbundance<-apply(LatePermianMatrix,2,sum)
+> LatePermianSEB<-diversity(LatePermianAbundance,index = "shannon", MARGIN = 1, base = exp(1))
+> LatePermianSEB
+[1] 5.007539 #Gamma
+> LatePermianSEB<-mean(diversity(LatePermianMatrix, index = "shannon", MARGIN = 1, base = exp(1)))
+> LatePermianSEB
+[1] 3.311213 #Alpha
+> 5.007539-3.311213
+[1] 1.696326 #Beta
+
+> EarlyTriassicAbundance<-apply(EarlyTriassicMatrix,2,sum)
+> EarlyTriassicSEB<-diversity(EarlyTriassicAbundance,index = "shannon", MARGIN = 1, base = exp(1))
+> EarlyTriassicSEB
+[1] 4.570008 #Gamma
+> EarlyTriassicSEB<-mean(diversity(EarlyTriassicMatrix, index = "shannon", MARGIN = 1, base = exp(1)))
+> EarlyTriassicSEB
+[1] 2.962167 #Alpha
+> 4.570008-2.962167
+[1] 1.607841 #Beta
+
+> LateCretaceousAbundance<-apply(LateCretaceousMatrix,2,sum)
+> LateCretaceousSEB<-diversity(LateCretaceousAbundance,index = "shannon", MARGIN = 1, base = exp(1))
+> LateCretaceousSEB
+[1] 5.737528 #Gamma
+> LateCretaceousSEB<-mean(diversity(LateCretaceousMatrix, index = "shannon", MARGIN = 1, base = exp(1)))
+> LateCretaceousSEB
+[1] 3.320595 #Alpha
+> 5.737528-3.320595
+[1] 2.416933 #Beta
+
+> EarlyPaleogeneAbundance<-apply(EarlyPaleogeneMatrix,2,sum)
+> EarlyPaleogeneSEB<-diversity(EarlyPaleogeneAbundance,index = "shannon", MARGIN = 1, base = exp(1))
+> EarlyPaleogeneSEB
+[1] 5.981497 #Gamma
+>  EarlyPaleogene<-mean(diversity(EarlyPaleogeneMatrix, index = "shannon", MARGIN = 1, base = exp(1)))
+> EarlyPaleogene
+[1] 3.462838 #Alpha
+> 5.981497-3.462838
+[1] 2.518659 #Beta
+
+3.
+Late Ordovician
+> 2.775078/4.214808*100
+[1] 65.84115 #Alpha
+> 1.43973/4.214808*100
+[1] 34.15885 #Beta
+
+Early Silurian
+> 3.214317/5.336366*100
+[1] 60.23419 #Alpha
+> 2.122049/5.336366*100
+[1] 39.76581 #Beta
+
+Late Permian
+> 3.311213/5.007539*100
+[1] 66.12456 #Alpha
+> 1.696326/5.007539*100
+[1] 33.87544 #Beta
+
+Early Triassic
+> 2.962167/4.570008*100
+[1] 64.81755 #Alpha
+> 1.607841/4.570008*100
+[1] 35.18245 #Beta
+
+Late Cretaceous
+> 3.320595/5.737528*100
+[1] 57.87501 #Alpha
+> 2.416933/5.737528*100
+[1] 42.12499 #Beta
+
+Early Paleocene
+> 3.462838/5.981497*100
+[1] 57.8925 #Apha
+> 2.518659/5.981497*100
+[1] 42.1075 #Beta
+
+Gamma percentages will be 1 for all of them.
+
+4.
+> 3.214317-2.775078 #Late Ordovician Extinction
+[1] 0.439239
+> 2.962167-3.311213 #Late Permian Extinction
+[1] -0.349046
+> 3.462838-3.320595 #Late Cretaceous Extinction
+[1] 0.142243
+#Alpha biodiversity increased after Late Ordovician and Cretaceous extinctions, but decreased after Late Permian extinction
+
+5.
+> 60.23419-65.84115
+[1] -5.60696
+> 64.81755-66.12456
+[1] -1.30701
+> 57.8925-57.87501
+[1] 0.01749
+#Alpha biodiversity decreased after Late Ordovician and Permian extinctions, but increased after Late Cretaceous extinction.
+
+Problem set 4
+I think Beta diversity tends to neither increase nor decrease after mass extinction events based on my results across problem sets 1, 2, and 3. 
