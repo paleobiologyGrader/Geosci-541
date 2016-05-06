@@ -1,21 +1,28 @@
-Problem Set 1:
-Problem 1:
+> 19/20
+
+## Problem Set 1:
+
+#### Problem 1:
 Max_ma columns of DataPBDB represent records whose temporal locality is at most this age.
 Min_ma columns of DataPBDB represent records whose temporal locality is at least this age.
 
-Problem 2:
-> Oldestage<-tapply(DataPBDB[,"max_ma"],DataPBDB[,"genus"],max)
+#### Problem 2:
+`> Oldestage<-tapply(DataPBDB[,"max_ma"],DataPBDB[,"genus"],max)`
 
-Problem 3:
+#### Problem 3:
 > Yongestage<-tapply(DataPBDB[,"min_ma"],DataPBDB[,"genus"],min)
 
-Problem 4:
+
+#### Problem 4:
+````R
 >occurrences<-table(DataPBDB[,"genus"])
 > max(occurrences)
 [1] 1916
+````
 That is genus Anadara
 
-Problem 5:
+#### Problem 5:
+````R
 > Oldestage["Anadara"]
 Anadara 
      66 
@@ -24,64 +31,82 @@ Anadara
       0 
 
 0-66 million years is the stratigraphic range of this taxon.
+````
 
-Problem set 2:
-Question 1:
-Randomly resample the occurrences of Lucia, and find the mean longitude of our random sampl
+## Problem set 2:
+#### Question 1
+Randomly resample the occurrences of Lucia, and find the mean longitude of our random sample
 Lucina[,”paleolng”]: Longtitude of occurrences of Lucia;
 Length(Lucina[,”paleolng”]): set the length to only the longitude of occurrences of Lucia
 replace=true: sampling is with replacement
 sample(): randomly sample the longitude of occurrences of Lucia
 Mean: calculate the mean of the randomly sampled longitude of occurrences of Lucia
 
-Question 2:
-> plot(density(ResampledMeans))
+#### Question 2
+`> plot(density(ResampledMeans))`
 It looks approximately like Gaussian distribution. Because it is higher in the middle, lower on the sides. However there is a dent at the top of the curve before it reaches the peak of density.
 
-Question 3:
+#### Question 3
+````R
 > mean(ResampledMeans)
 [1] 24.16227
+````
+
 Yes, it is similar to the mean of the original data which is 24.1997.
 
-Question 4:
-> sort(ResampledMeans)
+#### Question 4:
+`> sort(ResampledMeans)`
 
-Question 5:
+#### Question 5:
+````R
 > Sorted<-sort(ResampledMeans)
 > quantile(Sorted,c(0.025,0.975))
     2.5%    97.5% 
 21.82094 26.28630 
+````
 
-Question 6:
+#### Question 6:
+
 Because it is approximately a Gaussian curve, so that the area between the 2.5th and 97.5 percentile is 95%, which is exactly the same as 95% confidence interval
 
-Problem set 3:
-Question 1:
+> Actually, whether its gaussian or not doesn't matter.
+
+## Problem set 3:
+#### Question 1:
 I think it is still alive, because -1.221208 indicates that the genus is still alive 1.221208 million years in the future from today
 
-Question 2:
+#### Question 2:
+````R
 > Dallarca<-subset(DataPBDB,DataPBDB[,"genus"]=="Dallarca")
 > estimateExtinction(Dallarca[,"min_ma"],0.95)
 Earliest   Latest 
- 2.58800 -3.88749 
+ 2.58800 -3.88749
+````
 
-Question 3:
+#### Question 3:
+````R
 > 3.88749-2.58800
 [1] 1.29949
 Since 1.29949 is bigger than 0, indicating that the Dallarca is alive today, and it will still be 1.29949 million years in the future.
+````
 
-Question 4:
+#### Question 4:
+
 We should trust the pure reading of the fossil record, Dallarca is not alive today.
 
-Problem set 4:
-Question 1:
+## Problem set 4:
+
+#### Question 1:
 The fossils cannot be randomly distributed, because ecological condition such as weather can influence the preservation of fossils
 
-Question 2:
+> Weather? This doesn't really make sense within the context of the question. -1 Points.
+
+#### Question 2:
 Due to geological movement such as subduction, it is highly likely that the preservation changes up or down a stratigraphic section.
 
-Problem set 5:
-Question 1:
+## Problem set 5:
+#### Question 1:
+````R
 > nrow(DataPBDB)
 [1] 67618
 > nrow(ExtantData)
@@ -89,8 +114,10 @@ Question 1:
 > 67618-59097
 [1] 8521
 #8521 occurrences were lost by limiting our analysis to on extant bivalves.
+````
 
-Question 2:
+## Question 2:
+````R
 > PresencePBDB<-presenceMatrix(DataPBDB,SampleDefinition="early_interval")
 > ncol(PresencePBDB)
 [1] 1018
@@ -105,19 +132,25 @@ Question 2:
 
 > 532/1018
 [1] 0.5225933
-
 #52.259% of Cenozoic bivalves in the PBDB are still extant today.
+````
 
-Question 3:
+## Question 3:
+
+````R
 > Oldest<-tapply(ExtantData[,"max_ma"],ExtantData[,"genus"],max)
 > Youngest<-tapply(ExtantData[,"min_ma"],ExtantData[,"genus"],min)
 > Oldest-Youngest
+````
 
-Question 4:
+## Question 4:
+````R
 > Youngest<-tapply(ExtantData[,"min_ma"],ExtantData[,"genus"],min)
 > which(Youngest!=0)
+````
 
-Question 5:
+## Question 5:
+````R
 > Scrobicularia<-subset(DataPBDB,DataPBDB[,"genus"]=="Scrobicularia")
 > estimateExtinction(Scrobicularia[,"min_ma"],0.95)
  Earliest    Latest 
@@ -169,5 +202,6 @@ Earliest   Latest
 > estimateExtinction(Acrosterigma[,"min_ma"],0.95)
  Earliest    Latest 
  0.011700 -3.481128 
+````
 
 80% of these taxa have confidence intervals indicatimg that the taxon might still be extant, including Acrosterigma, Gouldia, Kurtiella, Arctica, Digitaria, Dimya, Meiocardia, and Scrobicularia.
