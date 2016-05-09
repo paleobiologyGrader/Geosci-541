@@ -2,19 +2,20 @@ Derek Li
 04/24/16
 Summary #13
 
+> 10/10
+
 Dinosaurs in decline tens of millions of years before their final extinction by M. Sakamoto, M.J. Benton, and C. Venditti (2016)
 
-Article summary
+## Article summary
 The authors start off by stating that the controversy about if there was a long-term trend toward declining diversity of dinosaurs has been debated for decades, because of the difference in fossil datasets collected from all over the world. The authors believe that in order to prove if extinction rate surpassed speciation before the K-Pg extinction, phylogenies with taxa sampled through time is required. As a result, phylogenetic generalized linear mixed model is applied on three comprehensive dinosaur phylogenies. The authors find that extinction rate exceeded speciation rate about 24 Million years before the K-Pg extinction event. Moreover, the authors conclude that nonhomogeneity in speciation process leads to difference in the timing of the switch from slowdown to downturn. The sauropodomorphs suffered the most prominent downturn through the Triassic and Early Jurassic boundary, whereas the theropod speciation shows a classic “early burst” pattern, indicating a speciation slowdown model. Furthermore, the authors also state that their result of high levels of speciation in hadrosauriforms contradicts more recent works, which could be caused by increased provincialism shown in Cretaceous dinosaurs.
 
 The authors then bring up a theory that ecological limit on speciation could be used to explain speciation showdowns. It is proved by a follow-up test including the measure of intraclade niche competition. After this, the authors discuss that their results also demonstrate that there is a significant positive effect of sea level on speciation, which is supported by the study done by Horner et al. In conclusion, the results indicate that dinosaurs were in decline for a much longer period than previously thought. This declination leaves room for other animal groups to radiate during the same period and also makes dinosaurs more susceptible to sudden environmental changes. At the end of the paper, the authors mention that it is also possible that the downturns are caused by under-sampling. If this assumption is true, then there is a possibility that a systematic downward bias present in the phylogeny.
 
-Things I liked about the article
+## Things I liked about the article
 There were two things I liked about the paper. First of all, the authors explicitly state the significance of this article. This can be found near the end of the results and discussion section, where the authors discuss that unlike previous nonphylogenetic attempts to study changes in dinosaur taxic diversity across geological time bins, our method is robust to sampling and other potentially confounding factors. From my perspective, I thought it was a pretty succinct, yet comprehensive conclusion for what this paper could do for us. Secondly, I also rather enjoyed the structure of this paper that the materials and methods section is at the end of the article. I think it is quite helpful for me when I was reading the article. I was able to better focus on the main information that the authors try to convey in the article and, in the mean while, follow the authors’ train of thoughts.
 
-
-Things I did not like about the article
+## Things I did not like about the article
 There was one thing I did not like about the article. Towards the end, the authors discuss that the assumption that observed downturns might be byproducts of under-sampling would imply that there is a systematic downward bias in the phylogeny. Even though they test the effect of this bias right afterwards, the authors do not reveal the results of this test. I felt a little disappointed when I was reading this part, since I was expecting to learn what kind of impacts the bias would cause. 
 
-Evaluations of figures 
+## Evaluations of figures 
 I really enjoyed the overall quality of the figures. Figure one was my favorite, because it is rather succinct yet comprehensive. It is also closely related to the article by showing how the curves would have looked different if the extinction and speciation rate are varying. However, I was kind of confused about what the node count was. Another good thing about the figures was that they all have rather explicit and comprehensive legends. I think they are quite useful in helping readers to better understand the figures and the entire article as well. 
