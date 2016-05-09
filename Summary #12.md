@@ -2,18 +2,20 @@ Derek Li
 Summary #12
 04/18/16
 
+> 10/10
+
 The Red Queen and the Court Jester: Species Diversity and the Role of Biotic and Abiotic Factors Through Time by M. J. Benton (2009)
 
-Article Summary
+## Article Summary
 The author starts off by stating that the Red Queen and the Court Jester are two ways of viewing evolution. The Red Queen views evolution as a balance of biotic pressures, whereas the Court Jester sees evolution as a result of changes in physical environment. Benton believes that on a small time and geological scale, the Red Queen is more applicable than the Court Jester. However, on a large scale, this may not be the case anymore. Then the author discusses that in the process of investigating global diversification, researchers mainly utilize two models, the equilibrium and the expansion models. There are two versions of equilibrium model. One model identifies three equilibrium levels, whereas the other only identifies one. The expansion model depicts diversification as consistently on a rise without a predicable limit. Because of the importance of correction for sampling, the author believes that multiple-equilibria and expansion models are actually more applicable. Moreover, the author states that it might be wrong to generalize from marine studies to all life since researchers are not quite sure about the patterns of diversification.
 
 The author also discusses that taxic studies have provided a lot of evidence on abiotic factors controlling species diversity. For instance, the break-up of Pangaea led to the rises of many terrestrial faunas and floras. There are also examples related to energy and niche subdivision, and how they may correlate with species richness. The author also talks about the importance of phylogenetic studies in investigating the process of diversification. It is essential to have a complete phylogenetic tree, which is rather hard to achieve. Near the end of the article, the author states that the role of competition has been a focus of debate on macroevolution. Although people usually think that dinosaurs flourished because they outcompeted their precursors, the phylogenetic study shows otherwise. It turns out that occupation of new ecospace actually led to the rise of dinosaurs. Another statement made by the author is that identification of diversification shifts may indicate relative importance of the Red Queen and Court Jester views. At the end, the author says that comparing of sister taxa allows us to test resource-use hypothesis, which indicates that diversification is more likely to happen when habitats undergo environmental changes. 
 
-Things I liked about the paper
+## Things I liked about the paper
 There was I thing I liked about the paper. The author offers a lot of examples to readers throughout the entire paper. I think at least it is rather useful for me to understand the context of the paper. For example, in the third paragraph of the phylogenetic studies of clade histories section, the author states that major biotic replacements, where one clade replaces another, have been a focus of debate about the roles of competition and progress in macroevolution. Then Benton provides a classic example on dinosaurs, showing there was no insistent competition driving dinosaurs’ precursors to extinct. I think this example fully clarifies why there is a debate on roles of competition in macroevolution, and allows readers to better understand this article.
 
-Things I did not like about the paper
+## Things I did not like about the paper
 One thing I did not like about the paper is that the author leans toward the view of the Court Jester. Benton uses a lot of examples to support it in this article. For example, at the end of the paper, the author states that the resource-use model then stresses the role of climate and tectonic movements in determining species diversity rather than biological controls.  As a student with a biology background, I found it is not quite convincing, because environmental changes usually lead to resource partitioning, and it happens because species tend to avoid competition for resources. As a result, I think the conclusion the author gives at the end of the comparing sister taxa section did not consider all the factors that could lead to the result. 
 
-Evaluations of figures and tables
+## Evaluations of figures and tables
 I really enjoy the overall quality of the figures. Figure 3 is my favorite, because it gives some rather vivid images of Dinosauria and Crurotarsi. I think it really makes reading more interesting. Moreover, these images also drew my attention to the figures, making me actually look at the figures and try to understand what the author is trying to express via these figures. However, compared to the figures, the table is kind of confusing. I was not sure what I am looking at in the beginning. 
