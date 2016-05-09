@@ -2,18 +2,20 @@ Derek Li
 05/01/16
 Summary #14
 
+> 10/10
+
 Has the Earth’s sixth mass extinction already arrived? by A.D. Barnosky et al. (2011)
 
-Article Summary:
+## Article Summary:
 The authors start off by stating that more scientists are recognizing that people are probably causing the sixth mass extinction through introducing non-native species, fragmenting habitats, etc. In order to assess the ongoing extinction, the authors utilize a conservative approach by setting a high bar for the extreme diversity loss. However one of the obstructs is that the modern data is biased, since only a tiny portion of named species has been evaluated for extinction status. Despite the fact that both fossils and modern data are biased, the authors still manage to work around the biases. One of the approaches they propose is background rate comparison. In this approach, background rates are estimated from fossil extinctions, and current rates are extrapolated using the data collected from a very short time. The authors point out that this method could be biased, since the yield might be much faster or slower than the current extinction rate. By utilizing paleontology databases, the authors conclude that current average extinction rates are far above the average and in worst–case scenario, the extinction rate for mammals would exceed background rates. 
 
 Another approach highlighted by the authors compares the extinction magnitude. However, because of the differences in the fossil and modern extinction records, only a few groups can be analyzed. The result suggests that we have not yet seen the sixth mass extinction. Species-area technique suggests an extinction rate of 21-52% in the future, which is similar to the magnitude derived by the authors. The third method proposed by the authors is combined rate-magnitude comparisons. In further, the authors bring up a question that would there be a mass extinction in the near future? Two different hypothetical approaches are used to answer this question. The first one assumes that Big Five extinctions took place suddenly. In this hypothesis, contemporary extinction is actually slower than the ones produced by the five extinctions. The second approach concludes that if all threatened species went extinct in a century, the rate would reach Big Five magnitudes. Towards the end, the authors state that more rigorously testing hypotheses may be rather important in assessing the sixth mass extinction. Moreover, without mitigation efforts, stressors on living species will eventually intensify extinctions. 
 
-Things I liked about the article
+## Things I liked about the article
 One thing I liked about the article is that the logic of the entire paper is rather easy to follow. In order to find some promising approaches to assess if the sixth mass extinction has arrived, the authors take a general approach of listing obstructs first and then find a way to go around it for each method.  For instance, in the magnitude section, the authors first point out that comparisons need to be refined by compensating for many differences between the modern and the fossil records, followed by a statement in second paragraph that a way around it is utilizing modern taxonomic groups that are known from exceptionally good fossil records. I think this approach is really helpful for readers who are not experts on this sort of topic. It makes the article much easier to read and understand. The other thing I liked about the article is that, the authors offer a view to the future section in the end. I think it is a really good way to end a paper. It not only provides a guide of what should be done in the future, but also gives readers a general conclusion of the entire paper.
 
-Things I did not like about the article
+## Things I did not like about the article
 There was one thing I did not like about the paper. I feel like the selectivity section is kind of independent of the entire paper. Although it talks about how extinctions of certain kinds of species may act as an indicator of mass extinctions, the authors did not relate this hypothesis to the gist of the paper, which is assessing if the sixth extinction has come or not. I think the authors could easily improve this by including this hypothesis in the view to the future section and say people could study this hypothesis more thoroughly in the future. 
 
-Evaluations of tables and figures
+## Evaluations of tables and figures
 I think the overall quality of the tables and figures is great. The authors use some illustrations in the figures, which I think make reading much more interesting. Moreover, legends given by authors are rather thorough, such as the one under figure one. It includes a lot of information that is pertinent to the article. Tables are also quite readable. They provide a lot of additional information that allows readers to expand their knowledge if they want. 
